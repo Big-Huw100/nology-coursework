@@ -4,6 +4,11 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+*::selection {
+  color: white;
+  background-color: #1182EB;
+}
+
 body {
   background-color: white;
   max-width: 1400px;
