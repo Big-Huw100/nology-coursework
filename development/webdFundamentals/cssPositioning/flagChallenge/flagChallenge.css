@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 #blue {
     height: 300px;
     width: 150px;
@@ -19,4 +23,75 @@
     background-color: red;
     position: absolute;
     left: 300px;
+}
+
+#green {
+    height: 300px;
+    width: 150px;
+    background-color: green;
+    position: absolute;
+}
+
+#orange {
+    height: 300px;
+    width: 150px;
+    background-color: orange;
+    position: absolute;
+    left: 300px;
+}
+
+#german {
+    position: absolute;
+    top: 300px;
+}
+
+#black {
+    width: 450px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+}
+
+#grred {
+    width: 450px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+}
+
+#yellow {
+    width: 450px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 200px;
+}
+
+#hungarian {
+    position: absolute;
+    top: 300px;
+}
+
+#hured {
+    width: 450px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+}
+
+#huwhite {
+    width: 450px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+}
+
+#hugreen {
+    width: 450px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: 200px;
 }
