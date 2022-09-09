@@ -1,0 +1,22 @@
+#blue {
+    height: 300px;
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+}
+
+#white {
+    height: 300px;
+    width: 1500px;
+    background-color: white;
+    position: absolute;
+    left: 150px;
+}
+
+#red {
+    height: 300px;
+    width: 150px;
+    background-color: red;
+    position: absolute;
+    left: 300px;
+}
