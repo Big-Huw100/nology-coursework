@@ -10,7 +10,7 @@ nav {
     height: 8vh;
 }
 
-div {
+a {
     color: white;
     font-weight: 550;
     display: flex;
@@ -18,12 +18,13 @@ div {
     align-items: center;
     margin-left: 100px;
     margin-right: 50px;
+    text-decoration: none;
+    
 }
 
 #logo {
     background-color: green;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 550;
     height: 8vh;
     width: 175px;
@@ -31,4 +32,38 @@ div {
     justify-content: center;
     align-items: center;
     position: absolute;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+div {
+    border: 3px solid black;
+    margin: 20px;
+    padding: 20px;
+    width: 850px
+}
+
+h1 {
+    font-size: larger;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+li {
+    margin: 10px;
+}
+
+#rightHalf {
+    border: 3px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+p {
+    margin-top: 10px;
 }
