@@ -1,99 +1,98 @@
 * {
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    height: 8vh;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  height: 8vh;
 }
 
 a {
-    color: white;
-    font-weight: 550;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 50px;
-    text-decoration: none;
-    
+  color: white;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 50px;
+  text-decoration: none;
 }
 
 a:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 #logo {
-    background-color: green;
-    color: white;
-    font-weight: 550;
-    height: 8vh;
-    width: 175px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+  background-color: green;
+  color: white;
+  font-weight: 550;
+  height: 8vh;
+  width: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 
 main {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 div {
-    display: flex;
-    border: 3px solid black;
-    margin: 20px;
-    padding: 20px;
-    width: 850px
+  display: flex;
+  border: 3px solid black;
+  margin: 20px;
+  padding: 20px;
+  width: 850px;
 }
 
 h1 {
-    font-size: larger;
+  font-size: larger;
 }
 
 ul {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 li {
-    margin: 10px;
+  margin: 10px;
 }
 
 #rightHalf {
-    border: 3px solid black;
-    margin: 20px;
-    padding: 20px;
+  border: 3px solid black;
+  margin: 20px;
+  padding: 20px;
 }
 
 p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #panel1 {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #panel2 {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #panel3 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .square {
-    color: white;
-    background-color: black;
-    padding: 0;
-    height: 100px;
-    width: 100px;
+  color: white;
+  background-color: black;
+  padding: 0;
+  height: 100px;
+  width: 100px;
 }
