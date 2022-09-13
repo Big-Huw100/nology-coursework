@@ -32,24 +32,3 @@ div {
     align-items: center;
     position: absolute;
 }
-
-span {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid black;
-    width: 62%;
-    margin: 20px;
-    padding: 20px;
-}
-
-h1 {
-    font-size: large;
-}
-
-ul {
-    padding-top: 10px;
-}
-
-li {
-    padding: 5px;
-}
