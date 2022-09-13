@@ -22,6 +22,11 @@ a {
     
 }
 
+a:hover {
+    background-color: white;
+    color: black;
+}
+
 #logo {
     background-color: green;
     color: white;
