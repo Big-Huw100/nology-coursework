@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
 
 $font-body:"Roboto" , sans-serif;
-$font-display: "Dancing Script" , cursive;
+$font-display: "Dancing Script";
 
 $color-primary: #28527a;
 $color-secondary: #f0a500;
@@ -19,4 +19,29 @@ $color-white: #fafafa;
 a:link,
 a:visited {
     text-decoration: none;
+}
+
+nav {
+    height: 10vh;
+    background-color: $color-primary;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: $font-display;
+    font-size: 20px;
+    color: $color-white;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    background-color: $color-secondary;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: $color-white;
 }
