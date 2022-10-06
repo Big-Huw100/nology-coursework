@@ -12,14 +12,14 @@ a:visited {
   text-decoration: none;
 }
 
-header {
+.header {
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav {
+.navigation {
   height: 10vh;
   background-color: #28527a;
   padding: 0 40px;
@@ -44,18 +44,18 @@ nav {
   color: #fafafa;
 }
 
-div {
+.intro {
   text-align: center;
 }
-div h1 {
+.intro__heading {
   color: #28527a;
   font-size: 50px;
 }
-div h2 {
+.intro__sub-heading {
   font-family: "Dancing Script";
   font-size: 25px;
   margin: 20px 0;
 }
-div a {
+.intro__button {
   margin: 0 auto;
 }
