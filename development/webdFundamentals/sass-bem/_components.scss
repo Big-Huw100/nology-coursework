@@ -27,6 +27,12 @@
         width: 100%;
         background-color: $color-primary-light;
     }
+
+    &--farewell {
+        background-color: $color-white;
+        color: $color-primary;
+        border: 2px solid $color-primary-light;
+    }
 }
 
 .intro {
@@ -61,5 +67,18 @@
 
     &__input {
         margin-bottom: 20px;
+    }
+}
+
+.farewell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__message {
+        font-family: $font-display;
+        font-size: 25px;
+        margin: 20px 0;
     }
 }

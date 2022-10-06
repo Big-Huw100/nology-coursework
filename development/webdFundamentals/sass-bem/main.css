@@ -56,6 +56,11 @@ a:visited {
   width: 100%;
   background-color: #55a5f0;
 }
+.button--farewell {
+  background-color: #fafafa;
+  color: #28527a;
+  border: 2px solid #55a5f0;
+}
 
 .intro {
   text-align: center;
@@ -86,4 +91,16 @@ a:visited {
 }
 .form__input {
   margin-bottom: 20px;
+}
+
+.farewell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.farewell__message {
+  font-family: "Dancing Script";
+  font-size: 25px;
+  margin: 20px 0;
 }
