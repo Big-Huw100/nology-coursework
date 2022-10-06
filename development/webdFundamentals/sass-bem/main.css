@@ -27,6 +27,21 @@ a:visited {
   align-items: center;
 }
 
+.footer {
+  height: 10vh;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #28527a;
+}
+.footer p {
+  color: #fafafa;
+}
+.footer__copyright {
+  margin-right: 40px;
+}
+
 .navigation {
   height: 10vh;
   background-color: #28527a;
@@ -94,6 +109,7 @@ a:visited {
 }
 
 .farewell {
+  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;

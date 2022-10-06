@@ -14,5 +14,18 @@
 }
 
 .footer {
+    height: 10vh;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary;
 
+    p {
+        color: $color-white;
+    }
+
+    &__copyright {
+        margin-right: 40px;
+    }
 }
