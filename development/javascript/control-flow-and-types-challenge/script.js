@@ -5,6 +5,7 @@ if (myNumber >= 0) {
     console.log("It's a negative number")
 }
 
+
 switch(new Date().getDay()) {
     case 0:
         console.log("It's already the weekend")
@@ -29,16 +30,30 @@ switch(new Date().getDay()) {
         break;
 }
 
-const vegetable = "carrot";
-switch(vegetable) {
-    case "potato":
-    case "carrot":
-        console.log("1.29 per kg")
-        break;
-    case "brocolli":
-        console.log("1.5 per kg")
-        break;
-    case "cabbage":
-        console.log("asparagus")
-        break;
+
+function handlePrice(event) {
+
+    let vegetable = event.target.value;
+
+    if (!vegetable) {
+        return;
+    }
+
+    vegetable = vegetable.toLowerCase();
+
+    let price;
+    switch (vegetable) {
+        case "potato":
+        case "carrot":
+            price = "£1.29 per kg"
+            break;
+        case "brocolli":
+            price = "£1.50 per kg"
+            break;
+        case "cabbage":
+            price = "£1.75 per kg"
+            break;
+    }
+
+    alert("The " + vegetable + " costs " + price)
 }
