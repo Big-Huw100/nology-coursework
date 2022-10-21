@@ -24,7 +24,7 @@ console.log(numbers[2]);
 //     console.log(coaches[i]);
 // }
 
-// 5 create a forEach loop (a loop that is a lot easier to set up than the loop above)
+// 5. create a forEach loop (a loop that is a lot easier to set up than the loop above)
 
 pets.forEach((pet) => {
     console.log(pet);
@@ -33,3 +33,15 @@ pets.forEach((pet) => {
 coaches.forEach((coach) => {
     console.log(coach);
 })
+
+// 6. Use a map to prepend the word coach to each coach
+
+const newCoaches = coaches.map((coach) => {
+    return `Coach - ${coach}`;
+})
+console.log(newCoaches);
+
+const newPets = pets.map((pet) => {
+    return `Pets - ${pet}`;
+})
+console.log(newPets);
