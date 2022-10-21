@@ -45,3 +45,23 @@ const newPets = pets.map((pet) => {
     return `Pets - ${pet}`;
 })
 console.log(newPets);
+
+// 7. Use filter to remove a name from an array
+
+const coachesFilter = coaches.filter((coach) => {
+    if (coach.includes("e")) {
+        return true;
+    } else {
+        return false;
+    }
+})
+
+console.log(coachesFilter);
+
+// 8. Below is a super simplfied version of using filter
+
+const scores = [8, 9, 12];
+
+const highScores = scores.filter((score) => score > 10);
+
+console.log(highScores);
