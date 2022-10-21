@@ -16,10 +16,20 @@ console.log(numbers[2]);
 
 // 4. create a sample for loop
 
-for (let i = 0; i < pets.length; i++) {
-    console.log(pets[i]);
-}
+// for (let i = 0; i < pets.length; i++) {
+//     console.log(pets[i]);
+// }
 
-for (let i = 0; i < coaches.length; i++) {
-    console.log(coaches[i]);
-}
+// for (let i = 0; i < coaches.length; i++) {
+//     console.log(coaches[i]);
+// }
+
+// 5 create a forEach loop (a loop that is a lot easier to set up than the loop above)
+
+pets.forEach((pet) => {
+    console.log(pet);
+})
+
+coaches.forEach((coach) => {
+    console.log(coach);
+})
