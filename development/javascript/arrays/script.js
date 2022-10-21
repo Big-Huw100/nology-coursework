@@ -16,6 +16,10 @@ console.log(numbers[2]);
 
 // 4. create a sample for loop
 
-for (let i = 0; i < 5; i++) {
-    console.log(`The index on this loop was ${i}`);
+for (let i = 0; i < pets.length; i++) {
+    console.log(pets[i]);
+}
+
+for (let i = 0; i < coaches.length; i++) {
+    console.log(coaches[i]);
 }
