@@ -54,7 +54,7 @@ const coachesFilter = coaches.filter((coach) => {
     } else {
         return false;
     }
-})
+});
 
 console.log(coachesFilter);
 
