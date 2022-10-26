@@ -74,15 +74,15 @@
       }
 
       // 4. Create a handleInputChange function to validate the input
-         // Can you add the class 'valid' if it has a value?​
-         // Can you  add the 'invalid' class if it does not?
-
+         
          formInputs[0].addEventListener("input", (event) => {
           let inputValue = event.target.value;
 
+          // Can you add the class 'valid' if it has a value?​
           if (inputValue != undefined && inputValue.length > 0) {
             event.target.classList.remove("invalid");
             event.target.classList.add("valid");
+          // Can you  add the 'invalid' class if it does not?
           } else {
             event.target.classList.remove("valid");
             event.target.classList.add("invalid");
