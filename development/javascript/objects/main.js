@@ -70,9 +70,9 @@ person.age = 31;
 // PascalCase -> naming convention for classes
 class ExampleClass {
     constructor(firstName, lastName, age) {
-        this.firstName = firstName,
-        this.lastName = lastName,
-        this.age = age
+        (this.firstName = firstName),
+        (this.lastName = lastName),
+        (this.age = age)
     }
 
     greeting() {
@@ -85,3 +85,36 @@ const exampleTwo = new ExampleClass("John", "Doe", 27)
 
 console.log(exampleOne.greeting());
 console.log(exampleTwo.greeting());
+
+class Profile {
+    constructor(firstName, lastName, quote, skills, imgURL) {
+        (this.firstName = firstName),
+        (this.lastName = lastName), 
+        (this.quote = quote),
+        (this.skills = skills),
+        (this.imgURL = imgURL)
+    }
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`
+    }
+
+    getSkillList() {
+        const skillList = this.skills.map(skill => `<li>${skill}</li>`)
+        return skillList.join("\n");
+    }
+
+    getPersonHTML() {
+        const personHTML = `
+        <article class="student-card">
+            <img src=${this.imgURL} />
+            <h2>${this.getFullName()}</h2>
+            <blockquote>${this.quote}</blockquote>
+            <h3>Skills</h3>
+            <ul>${this.getSkillList()}</ul>
+        </article>
+        `
+        return personHTML;
+    }
+};
+
+const huw = new Profile("Huw", "Williams", "It's what we do with the gift of life that determins who we are", ["HTML", "CSS", "Javascript"], "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-6/288020499_10161560298226756_2295376958204827870_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=8jlh0fKAnAEAX_0JRB3&_nc_ht=scontent-man2-1.xx&oh=00_AfA6H920aViQDcyTGLiXnbtYHX9dCHFMh-sB0IRkXUxUfA&oe=6377DFA0");
