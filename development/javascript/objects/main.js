@@ -57,6 +57,9 @@ const person = {
     }
 };
 
-studentContainer.innerHTML = person.getPersonHTML();
+
+for(let i = 0; i < 10; i++) {
+    studentContainer.innerHTML += person.getPersonHTML();
+}
 
 person.age = 31;
