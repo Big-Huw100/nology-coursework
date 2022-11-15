@@ -60,6 +60,28 @@ const person = {
 
 for(let i = 0; i < 10; i++) {
     studentContainer.innerHTML += person.getPersonHTML();
-}
+};
 
 person.age = 31;
+
+
+// Class Syntax
+
+// PascalCase -> naming convention for classes
+class ExampleClass {
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName,
+        this.lastName = lastName,
+        this.age = age
+    }
+
+    greeting() {
+        return `Hi, my name is ${this.firstName} ${this.lastName} and I am ${this.age} years old`;
+    };
+};
+
+const exampleOne = new ExampleClass("Huw", "Williams", 31);
+const exampleTwo = new ExampleClass("John", "Doe", 27)
+
+console.log(exampleOne.greeting());
+console.log(exampleTwo.greeting());
