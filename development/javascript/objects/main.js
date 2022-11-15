@@ -27,42 +27,42 @@
 
 // console.log(exampleObject);
 
-const studentContainer = document.querySelector(".students-container");
+// const studentContainer = document.querySelector(".students-container");
 
-const person = {
-    firstName: "Huw",
-    lastName: "Williams",
-    quote: "It's what we do with the gift of life that determins who we are",
-    skills: ["HTML", "CSS", "Javascript"],
-    imgURL: "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-6/288020499_10161560298226756_2295376958204827870_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=8jlh0fKAnAEAX_0JRB3&_nc_ht=scontent-man2-1.xx&oh=00_AfA6H920aViQDcyTGLiXnbtYHX9dCHFMh-sB0IRkXUxUfA&oe=6377DFA0",
-    getFullName() {
-        return `${this.firstName} ${this.lastName}`
-    },
-    getSkillList() {
-        const skillList = this.skills.map(skill => `<li>${skill}</li>`)
-        console.log(skillList);
-        return skillList.join("\n");
-    },
-    getPersonHTML() {
-        const personHTML = `
-        <article class="student-card">
-            <img src=${this.imgURL} />
-            <h2>${this.getFullName()}</h2>
-            <blockquote>${this.quote}</blockquote>
-            <h3>Skills</h3>
-            <ul>${this.getSkillList()}</ul>
-        </article>
-        `
-        return personHTML;
-    }
-};
+// const person = {
+//     firstName: "Huw",
+//     lastName: "Williams",
+//     quote: "It's what we do with the gift of life that determins who we are",
+//     skills: ["HTML", "CSS", "Javascript"],
+//     imgURL: "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-6/288020499_10161560298226756_2295376958204827870_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=8jlh0fKAnAEAX_0JRB3&_nc_ht=scontent-man2-1.xx&oh=00_AfA6H920aViQDcyTGLiXnbtYHX9dCHFMh-sB0IRkXUxUfA&oe=6377DFA0",
+//     getFullName() {
+//         return `${this.firstName} ${this.lastName}`
+//     },
+//     getSkillList() {
+//         const skillList = this.skills.map(skill => `<li>${skill}</li>`)
+//         console.log(skillList);
+//         return skillList.join("\n");
+//     },
+//     getPersonHTML() {
+//         const personHTML = `
+//         <article class="student-card">
+//             <img src=${this.imgURL} />
+//             <h2>${this.getFullName()}</h2>
+//             <blockquote>${this.quote}</blockquote>
+//             <h3>Skills</h3>
+//             <ul>${this.getSkillList()}</ul>
+//         </article>
+//         `
+//         return personHTML;
+//     }
+// };
 
 
-for(let i = 0; i < 10; i++) {
-    studentContainer.innerHTML += person.getPersonHTML();
-};
+// for(let i = 0; i < 10; i++) {
+//     studentContainer.innerHTML += person.getPersonHTML();
+// };
 
-person.age = 31;
+// person.age = 31;
 
 
 // Class Syntax
@@ -103,8 +103,8 @@ class Profile {
         return skillList.join("\n");
     }
 
-    getPersonHTML() {
-        const personHTML = `
+    getProfileHTML() {
+        const profileHTML = `
         <article class="student-card">
             <img src=${this.imgURL} />
             <h2>${this.getFullName()}</h2>
@@ -113,8 +113,15 @@ class Profile {
             <ul>${this.getSkillList()}</ul>
         </article>
         `
-        return personHTML;
+        return profileHTML;
     }
 };
 
+const studentContainer = document.querySelector(".students-container");
+
 const huw = new Profile("Huw", "Williams", "It's what we do with the gift of life that determins who we are", ["HTML", "CSS", "Javascript"], "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-6/288020499_10161560298226756_2295376958204827870_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=8jlh0fKAnAEAX_0JRB3&_nc_ht=scontent-man2-1.xx&oh=00_AfA6H920aViQDcyTGLiXnbtYHX9dCHFMh-sB0IRkXUxUfA&oe=6377DFA0");
+
+const john = new Profile("John", "Doe", "Them's the breaks!", ["Dancing", "Swimging", "Painting"], "https://scontent-man2-1.xx.fbcdn.net/v/t1.6435-9/66130321_10158147439021756_3648801646844051456_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=lAXE4dFx_XkAX-HQpjT&_nc_ht=scontent-man2-1.xx&oh=00_AfD8RHdl4lEydkSqYmCCdt-XQH16T0lVYWDVUzkez2slrg&oe=639B0D34");
+
+studentContainer.innerHTML += huw.getProfileHTML();
+studentContainer.innerHTML += john.getProfileHTML();
