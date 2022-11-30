@@ -57,4 +57,4 @@ complexObject.data.newKey = "new value";
 
 console.log(parsedJSON.data);
 
-// Lodash
+// Lodash deep copy
